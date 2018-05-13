@@ -1,0 +1,73 @@
+#main {
+  padding-top: 100px; /* pushing calculator down */
+  font-family: 'Orbitron', sans-serif;
+}
+
+#container {
+  margin: auto; /* centering calculator horizontally */
+  width: 400px;
+  height: 278px;
+  border: 2px solid #DCAE1D;
+  color: white;
+  font-weight: 700;
+}
+
+#clear {
+  width: 98px;
+  height: 68px;
+  background-color: #CAE4DB;
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px; /* centering C letter vertically */
+  cursor: pointer;
+  border: 1px solid #CAE4DB;
+  float: left;
+}
+
+#input {
+  width: 300px;
+  height: 70px;
+  background-color: #DCAE1D;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 20px;
+  line-height: 70px;
+  float: right;
+  /* using box-sizing so that an element's specified width would not be affected by padding */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+}
+
+#keyboard {
+  cursor: pointer;
+  text-align: center;
+  /* setting the font size to zero px to fight the space between inline block elements.
+  A space that has zero font-size is zero width. */
+  font-size: 0px;
+}
+
+span.key {
+  width: 98px;
+  height: 50px;
+  background-color: #7A9D96;
+  border: 1px solid #CAE4DB;
+  font-size: 30px;
+  line-height: 50px;
+  display: inline-block; /* allowing to set a width and height on the element */
+}
+
+#eval {
+  width: 98px;
+  height: 50px;
+  background-color: #00303F;
+  font-size: 30px;
+  line-height: 50px;
+  border: 1px solid #CAE4DB;
+  display: inline-block;
+}
+
+.key:hover, #eval:hover, #clear:hover {
+  color: #DCAE1D;
+  border: 1px solid #DCAE1D;
+}
